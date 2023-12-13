@@ -6,7 +6,7 @@ var Schema = new Mongoose.Schema({
     email: { type: String,required:true },
     phone_number: { type: String,required:true },
     alamat: { type: String,required:true },
-    isVerified: {type:Boolean, default: false},
+    isVerified: {type:Boolean, default: true},
     verificationToken: {type:String},
     resetPasswordToken: { type: String },
     resetPasswordExpires: { type: Date },
